@@ -17,5 +17,5 @@ private _vehicle_list = [
 {
     private _display_name = _x select 0;
     private _vehicle_class = _x select 1;
-    this addAction [_display_name, "scripts\spawn_vehicle.sqf", [_vehicle_class]];
+    this addAction [_display_name, "scripts\fnc_spawnVehicleAtMarker.sqf", [_vehicle_class]];
 } forEach _vehicle_list;
