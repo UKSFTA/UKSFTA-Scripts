@@ -1,16 +1,19 @@
-{if ((typeOf _x == 'b_survivor_F') && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
-[MedicalData,3] call BIS_fnc_dataTerminalAnimate;
-sleep 5;
-_group1=createGroup west;
-'b_survivor_F' createUnit [getMarkerPos 'PatientSpawn', _group1,'pat1=this; dostop pat1; pat1 setcaptive true; pat1 switchmove "AmovPercMstpSsurWnonDnon";'];
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "leg_r", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "leg_l", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "body", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "head", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "hand_r", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1, selectRandom[0.3,0.5,0.7,0.9], "hand_l", selectRandom ["stab","bullet","falling"]] call ace_medical_fnc_addDamageToUnit;
-[pat1] call ace_medical_fnc_handleDamage_advancedSetDamage;
-[MedicalData,0] call BIS_fnc_dataTerminalAnimate;
-hint 'Your patient is ready';
+/*
+ * Author: UKSFTA Team
+ * Description: Spawns an injured patient unit for medical training.
+ *
+ * Parameter:
+ * 0: ARRAY - Position to spawn the patient.
+ *
+ * Return:
+ * OBJECT - The spawned patient.
+ */
+params [["_pos", [0,0,0], [[]]]];
 
-// The first selectRandom chooses a random damage from a small one to a large one, the second selectRandom chooses the type of damage
+private _group1 = createGroup civilian;
+private _patient = _group1 createUnit ["C_man_1", _pos, [], 0, "NONE"];
+
+[_patient, true] call ace_medical_fnc_setUnconscious;
+[_patient, 0.5] call ace_medical_fnc_setBloodLoss;
+
+_patient

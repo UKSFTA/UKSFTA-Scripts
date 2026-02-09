@@ -16,6 +16,7 @@ params [["_player", player, [objNull]]];
 private _userZeroRange = 100;
 private _weaponsInfo = weaponsInfo _player; // Corrected syntax
 
+private ["_x"];
 private _selectedWeaponInfo = _weaponsInfo findIf { _x select 1 };
 if (_selectedWeaponInfo == -1) exitWith {
     hint "Error: No selected weapon found. Please ensure you are holding a primary weapon with a loaded magazine.";
@@ -96,6 +97,7 @@ private _newPreset = [
 ];
 
 private _presets = profileNamespace getVariable ["ACE_ATragMX_gunList", []];
+private ["_x"];
 private _foundIndex = _presets findIf { (_x select 0) == _presetName };
 
 if (_foundIndex != -1) then {

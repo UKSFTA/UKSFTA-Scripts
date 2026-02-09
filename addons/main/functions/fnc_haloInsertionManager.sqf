@@ -18,6 +18,7 @@ _host addAction ["<t color='#00ffa6'>Select Drop Zone</t>", {
     openMap true; 
     hint 'Click on desired location.'; 
     onMapSingleClick {
+        params ["_pos"]; // Declare private parameter
         onMapSingleClick {};
         createMarker ["dz", _pos];
         "dz" setMarkerType "Mil_Start";
@@ -38,7 +39,7 @@ _host addAction ["--------STEP TWO--------", { hint 'Select the Altitude'; }];
 {
     _x params ["_label", "_alt"];
     _host addAction [format ["<t color='#04ff00'>-%1m</t>", _label], {
-        params ["_t", "_c", "_i", "_args"];
+        params ["", "", "", "_args"]; // Suppress unused action parameters
         _args params ["_altVal"];
         private _dz = createVehicle ["O_diver_TL_F", getMarkerPos "dz", [], 0, "NONE"];
         _dz hideObjectGlobal true;
@@ -58,13 +59,13 @@ _host addAction ["--------STEP TWO--------", { hint 'Select the Altitude'; }];
 _host addAction ["<t color='#FF0000'>Board Plane</t>", {
     cutText ["", "BLACK OUT", 3];
     sleep 4;
-    player moveInCargo plane02;
+    player moveInCargo (missionNamespace getVariable ["plane02", objNull]);
     cutText ["", "BLACK IN", 1];
     hint 'Boarded. Standby for drop.';
 }];
 
 _host addAction ["<t color='#FF0000'>Clear Flight Plan</t>", {
-    deleteVehicle plane02;
+    deleteVehicle (missionNamespace getVariable ["plane02", objNull]);
     deleteMarker "dz";
     hint "Flight plan cleared.";
 }];
