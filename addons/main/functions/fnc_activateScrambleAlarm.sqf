@@ -1,3 +1,16 @@
+/*
+ * Author: UKSFTA Team
+ * Description: Activates a siren alarm on nearby loudspeaker objects.
+ *
+ * Parameter:
+ * 0: OBJECT - The source object (button/console) used to trigger the alarm.
+ *
+ * Return:
+ * NOTHING
+ *
+ * Example:
+ * [this] spawn UKSFTA_fnc_activateScrambleAlarm;
+ */
 private _target = _this select 0;
 
 if (isNull _target) exitWith { hint "Error: The button's object was not passed to the script." };

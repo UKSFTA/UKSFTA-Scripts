@@ -1,5 +1,20 @@
-// List of vehicles to add as actions.
-// Each inner array contains [Display Name, Vehicle Class Name]
+/*
+ * Author: UKSFTA Team
+ * Description: Adds aircraft spawning actions to an object (e.g., a sign or console).
+ *
+ * Parameter:
+ * 0: OBJECT - The object to add actions to.
+ *
+ * Return:
+ * NOTHING
+ *
+ * Example:
+ * [this] call UKSFTA_fnc_addAircraftSpawnActions;
+ */
+params [["_host", objNull, [objNull]]];
+
+if (isNull _host) exitWith {};
+
 private _vehicle_list = [
     ["Spawn F-35B Lightning II (ZM136)", "FIR_F35B_RAF01"],
     ["Spawn F-35B Lightning II (ZM147)", "FIR_F35B_RAF02"],
@@ -13,9 +28,10 @@ private _vehicle_list = [
     ["Spawn Typhoon GR 4 (RAF Desert Storm)", "Tornado_AWS_UK_DS"]
 ];
 
-// Loop through the list and add an action for each vehicle.
 {
-    private _display_name = _x select 0;
-    private _vehicle_class = _x select 1;
-    this addAction [_display_name, "scripts\fnc_spawnVehicleAtMarker.sqf", [_vehicle_class]];
+    _x params ["_display_name", "_vehicle_class"];
+    _host addAction [_display_name, { _this call UKSFTA_fnc_spawnVehicleAtMarker }, [_vehicle_class]];
 } forEach _vehicle_list;
+
+_host addAction ["<t color='#FF0000'>Load Weapon Preset To Atrag MX</t>", { _this call UKSFTA_fnc_generateAtragMXPresetFromCurrentWeapon }];
+_host addAction ["<t color='#FF0000'>Activate Alarm</t>", { _this call UKSFTA_fnc_activateScrambleAlarm }];
