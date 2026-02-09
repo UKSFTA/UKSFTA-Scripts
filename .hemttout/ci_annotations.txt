@@ -1,12 +1,12 @@
-17||17||22||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
-35||35||5||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
-17||17||22||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
-35||35||5||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
-24||24||5||31||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_activateScrambleAlarm.sqf
 34||34||12||45||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_vehicleCTR_single.sqf
 144||144||48||64||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_vehicleCTR_single.sqf
 160||160||34||56||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_vehicleCTR_single.sqf
 160||160||76||120||notice||Using `select` with `count`||||/addons/main/functions/fnc_vehicleCTR_single.sqf
+17||17||22||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
+35||35||5||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
+24||24||5||31||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_activateScrambleAlarm.sqf
+17||17||22||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
+35||35||5||38||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
 54||54||25||71||warning||assignment to if can be replaced with select||use select||/addons/main/functions/fnc_vehicleCTR_single.sqf
 55||55||27||66||warning||assignment to if can be replaced the condition directly||use condition directly||/addons/main/functions/fnc_vehicleCTR_single.sqf
 101||101||34||80||warning||assignment to if can be replaced with select||use select||/addons/main/functions/fnc_vehicleCTR_single.sqf

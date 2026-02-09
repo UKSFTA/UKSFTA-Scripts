@@ -1,103 +1,245 @@
-2026-02-09T22:29:39.446322Z TRACE ThreadId(01) version: 1.18.1
-2026-02-09T22:29:39.446345Z TRACE ThreadId(01) platform: linux
-2026-02-09T22:29:39.446356Z TRACE ThreadId(01) args: [
+2026-02-09T22:49:42.623780Z TRACE ThreadId(01) version: 1.18.1
+2026-02-09T22:49:42.623810Z TRACE ThreadId(01) platform: linux
+2026-02-09T22:49:42.623819Z TRACE ThreadId(01) args: [
     "hemtt",
-    "check",
+    "release",
+    "--no-archive",
+    "--no-sign",
 ]
-2026-02-09T22:29:39.446527Z TRACE ThreadId(01) using temporary folder: "/tmp/hemtt/matt/Development_UKSFTA-Scripts"
-2026-02-09T22:29:39.446534Z TRACE ThreadId(01) using project folder: "/ext/Development/UKSFTA-Scripts"
-2026-02-09T22:29:39.446541Z TRACE ThreadId(01) using out folder: "/ext/Development/UKSFTA-Scripts/.hemttout"
-2026-02-09T22:29:39.446588Z TRACE ThreadId(01) using build folder: "/ext/Development/UKSFTA-Scripts/.hemttout/check"
-2026-02-09T22:29:39.446956Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
-2026-02-09T22:29:39.447008Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
-2026-02-09T22:29:39.447253Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
-2026-02-09T22:29:39.454182Z  INFO ThreadId(01) Config loaded for UKSF Task Force Alpha - Scripts 1.0.0.0-68fa1cad
-2026-02-09T22:29:39.454195Z TRACE ThreadId(01) Scanning /ext/Development/UKSFTA-Scripts/addons for addons
-2026-02-09T22:29:39.454254Z DEBUG ThreadId(01) using global config directory: "/home/matt/.config/hemtt"
-2026-02-09T22:29:39.454278Z  INFO ThreadId(01) Running checks
-2026-02-09T22:29:39.454287Z TRACE ThreadId(01) phase: init (BOM Check) (start)
-2026-02-09T22:29:39.454294Z TRACE ThreadId(01) phase: init (BOM Check) (done)
-2026-02-09T22:29:39.454297Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
-2026-02-09T22:29:39.454301Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
-2026-02-09T22:29:39.454305Z TRACE ThreadId(01) phase: init (git) (start)
-2026-02-09T22:29:39.454308Z TRACE ThreadId(01) phase: init (git) (done)
-2026-02-09T22:29:39.454312Z TRACE ThreadId(01) phase: init (Hooks) (start)
-2026-02-09T22:29:39.455575Z TRACE ThreadId(01) phase: init (Hooks) (done)
-2026-02-09T22:29:39.455584Z TRACE ThreadId(01) phase: init (Binarize) (start)
-2026-02-09T22:29:39.455588Z TRACE ThreadId(01) phase: init (Binarize) (done)
-2026-02-09T22:29:39.455592Z TRACE ThreadId(01) phase: init (Rapifier) (start)
-2026-02-09T22:29:39.455595Z TRACE ThreadId(01) phase: init (Rapifier) (done)
-2026-02-09T22:29:39.455604Z TRACE ThreadId(01) phase: init (SQF) (start)
-2026-02-09T22:29:39.574850Z TRACE ThreadId(01) phase: init (SQF) (done)
-2026-02-09T22:29:39.574869Z TRACE ThreadId(01) phase: init (Stringtables) (start)
-2026-02-09T22:29:39.574874Z TRACE ThreadId(01) phase: init (Stringtables) (done)
-2026-02-09T22:29:39.574879Z TRACE ThreadId(01) phase: check (BOM Check) (start)
-2026-02-09T22:29:39.575014Z TRACE ThreadId(01) phase: check (BOM Check) (done)
-2026-02-09T22:29:39.575019Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
-2026-02-09T22:29:39.575139Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
-2026-02-09T22:29:39.575143Z TRACE ThreadId(01) phase: check (git) (start)
-2026-02-09T22:29:39.578223Z TRACE ThreadId(01) phase: check (git) (done)
-2026-02-09T22:29:39.578231Z TRACE ThreadId(01) phase: check (Hooks) (start)
-2026-02-09T22:29:39.578235Z TRACE ThreadId(01) phase: check (Hooks) (done)
-2026-02-09T22:29:39.578239Z TRACE ThreadId(01) phase: check (Binarize) (start)
-2026-02-09T22:29:39.578691Z  INFO ThreadId(01) Validated 0 files for binarization
-2026-02-09T22:29:39.578697Z TRACE ThreadId(01) phase: check (Binarize) (done)
-2026-02-09T22:29:39.578700Z TRACE ThreadId(01) phase: check (Rapifier) (start)
-2026-02-09T22:29:39.578738Z TRACE ThreadId(01) phase: check (Rapifier) (done)
-2026-02-09T22:29:39.578742Z TRACE ThreadId(01) phase: check (SQF) (start)
-2026-02-09T22:29:39.578776Z TRACE ThreadId(01) phase: check (SQF) (done)
-2026-02-09T22:29:39.578780Z TRACE ThreadId(01) phase: check (Stringtables) (start)
-2026-02-09T22:29:39.578801Z TRACE ThreadId(01) phase: check (Stringtables) (done)
-2026-02-09T22:29:39.578806Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
-2026-02-09T22:29:39.578809Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
-2026-02-09T22:29:39.578813Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
-2026-02-09T22:29:39.578817Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
-2026-02-09T22:29:39.578820Z TRACE ThreadId(01) phase: pre_build (git) (start)
-2026-02-09T22:29:39.578824Z TRACE ThreadId(01) phase: pre_build (git) (done)
-2026-02-09T22:29:39.578827Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
-2026-02-09T22:29:39.578906Z  INFO ThreadId(01) Running hook: pre_build/01_set_version.rhai
-2026-02-09T22:29:39.579372Z  INFO ThreadId(01) [pre_build/01_set_version.rhai] mod.cpp version set
-2026-02-09T22:29:39.579449Z  INFO ThreadId(01) [pre_build/01_set_version.rhai] README.md version set
-2026-02-09T22:29:39.579549Z  INFO ThreadId(01) Running hook: pre_build/02_sync_cfgpatches.rhai
-2026-02-09T22:29:39.579746Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
-2026-02-09T22:29:39.580042Z  INFO ThreadId(01) [pre_build/02_sync_cfgpatches.rhai] HOOK: Verifying CfgPatches/CfgVehicles alignment...
-2026-02-09T22:29:39.580084Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
-2026-02-09T22:29:39.580089Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
-2026-02-09T22:29:39.580093Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
-2026-02-09T22:29:39.580096Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
-2026-02-09T22:29:39.583672Z  INFO ThreadId(01) Rapified 1 addon configs
-2026-02-09T22:29:39.583686Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
-2026-02-09T22:29:39.583691Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
-2026-02-09T22:29:39.584359Z TRACE ThreadId(06) sqf compiling /addons/main/functions/fnc_spawnVehicleAtMarker.sqf
-2026-02-09T22:29:39.584373Z TRACE ThreadId(03) sqf compiling /addons/main/functions/fnc_spawnPatient.sqf
-2026-02-09T22:29:39.584372Z TRACE ThreadId(08) sqf compiling /addons/main/functions/spawnPatient.sqf
-2026-02-09T22:29:39.584386Z TRACE ThreadId(13) sqf compiling /addons/main/functions/fnc_setVehicleDirectionFromMarker.sqf
-2026-02-09T22:29:39.584388Z TRACE ThreadId(05) sqf compiling /addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
-2026-02-09T22:29:39.584393Z TRACE ThreadId(04) sqf compiling /addons/main/functions/fnc_activateScrambleAlarm.sqf
-2026-02-09T22:29:39.584400Z TRACE ThreadId(12) sqf compiling /addons/main/functions/fnc_vehicleCTR_single.sqf
-2026-02-09T22:29:39.584406Z TRACE ThreadId(07) sqf compiling /addons/main/functions/fnc_haloInsertionManager.sqf
-2026-02-09T22:29:39.584411Z TRACE ThreadId(09) sqf compiling /addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
-2026-02-09T22:29:39.584428Z TRACE ThreadId(11) sqf compiling /addons/main/functions/fnc_addScrambleAlarmActivationAction.sqf
-2026-02-09T22:29:39.584433Z TRACE ThreadId(14) sqf compiling /addons/main/functions/fnc_exportAtragMXPresetsToClipboard.sqf
-2026-02-09T22:29:39.584445Z TRACE ThreadId(18) sqf compiling /addons/main/functions/fnc_addAircraftSpawnActions.sqf
-2026-02-09T22:29:39.584452Z TRACE ThreadId(25) sqf compiling /addons/main/functions/fnc_spawnInjuredPatient.sqf
-2026-02-09T22:29:39.584461Z TRACE ThreadId(10) sqf compiling /addons/main/functions/fnc_addAtragMXPresetLoadAction.sqf
-2026-02-09T22:29:39.618862Z  INFO ThreadId(01) Compiled 14 sqf files
-2026-02-09T22:29:39.618906Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
-2026-02-09T22:29:39.618913Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
-2026-02-09T22:29:39.619296Z  INFO ThreadId(01) Checked 0 stringtables
-2026-02-09T22:29:39.619304Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
-2026-02-09T22:29:39.623043Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
-2026-02-09T22:29:39.623222Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623228Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623231Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623235Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623239Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623242Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623246Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623250Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623253Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623257Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623261Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623264Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-02-09T22:29:39.623351Z TRACE ThreadId(01) wrote 18 ci annotations to .hemttout/ci_annotations.txt
+2026-02-09T22:49:42.624054Z TRACE ThreadId(01) using temporary folder: "/tmp/hemtt/matt/Development_UKSFTA-Scripts"
+2026-02-09T22:49:42.624063Z TRACE ThreadId(01) using project folder: "/ext/Development/UKSFTA-Scripts"
+2026-02-09T22:49:42.624070Z TRACE ThreadId(01) using out folder: "/ext/Development/UKSFTA-Scripts/.hemttout"
+2026-02-09T22:49:42.624109Z TRACE ThreadId(01) using build folder: "/ext/Development/UKSFTA-Scripts/.hemttout/release"
+2026-02-09T22:49:42.624662Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T22:49:42.624686Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T22:49:42.624938Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T22:49:42.631925Z  INFO ThreadId(01) Config loaded for UKSF Task Force Alpha - Scripts 1.0.0.0-18f2721e
+2026-02-09T22:49:42.631937Z TRACE ThreadId(01) Scanning /ext/Development/UKSFTA-Scripts/addons for addons
+2026-02-09T22:49:42.631982Z DEBUG ThreadId(01) using global config directory: "/home/matt/.config/hemtt"
+2026-02-09T22:49:42.632001Z TRACE ThreadId(01) phase: init (BOM Check) (start)
+2026-02-09T22:49:42.632011Z TRACE ThreadId(01) phase: init (BOM Check) (done)
+2026-02-09T22:49:42.632015Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
+2026-02-09T22:49:42.632018Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
+2026-02-09T22:49:42.632022Z TRACE ThreadId(01) phase: init (git) (start)
+2026-02-09T22:49:42.632025Z TRACE ThreadId(01) phase: init (git) (done)
+2026-02-09T22:49:42.632029Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2026-02-09T22:49:42.633292Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2026-02-09T22:49:42.633300Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2026-02-09T22:49:42.633343Z TRACE ThreadId(01) symlink "/tmp/hemtt/matt/Development_UKSFTA-Scripts/z/uksfta/main" => "/ext/Development/UKSFTA-Scripts/addons/main"
+2026-02-09T22:49:42.633401Z TRACE ThreadId(01) symlink "/tmp/hemtt/matt/Development_UKSFTA-Scripts/x/cba" => "/ext/Development/UKSFTA-Scripts/include/x/cba"
+2026-02-09T22:49:42.633423Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2026-02-09T22:49:42.633429Z TRACE ThreadId(01) phase: init (tex_headers) (start)
+2026-02-09T22:49:42.633433Z TRACE ThreadId(01) phase: init (tex_headers) (done)
+2026-02-09T22:49:42.633437Z TRACE ThreadId(01) phase: init (Files) (start)
+2026-02-09T22:49:42.633441Z TRACE ThreadId(01) phase: init (Files) (done)
+2026-02-09T22:49:42.633444Z TRACE ThreadId(01) phase: init (Meta) (start)
+2026-02-09T22:49:42.633448Z TRACE ThreadId(01) phase: init (Meta) (done)
+2026-02-09T22:49:42.633451Z TRACE ThreadId(01) phase: init (summary) (start)
+2026-02-09T22:49:42.633455Z TRACE ThreadId(01) phase: init (summary) (done)
+2026-02-09T22:49:42.633458Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2026-02-09T22:49:42.633462Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2026-02-09T22:49:42.633466Z TRACE ThreadId(01) phase: init (SQF) (start)
+2026-02-09T22:49:42.749159Z TRACE ThreadId(01) phase: init (SQF) (done)
+2026-02-09T22:49:42.749176Z TRACE ThreadId(01) phase: init (Stringtables) (start)
+2026-02-09T22:49:42.749181Z TRACE ThreadId(01) phase: init (Stringtables) (done)
+2026-02-09T22:49:42.749187Z TRACE ThreadId(01) phase: check (BOM Check) (start)
+2026-02-09T22:49:42.749341Z TRACE ThreadId(01) phase: check (BOM Check) (done)
+2026-02-09T22:49:42.749348Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
+2026-02-09T22:49:42.749471Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
+2026-02-09T22:49:42.749475Z TRACE ThreadId(01) phase: check (git) (start)
+2026-02-09T22:49:42.752697Z TRACE ThreadId(01) phase: check (git) (done)
+2026-02-09T22:49:42.752706Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2026-02-09T22:49:42.752711Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2026-02-09T22:49:42.752715Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2026-02-09T22:49:42.753184Z  INFO ThreadId(01) Validated 0 files for binarization
+2026-02-09T22:49:42.753191Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2026-02-09T22:49:42.753195Z TRACE ThreadId(01) phase: check (tex_headers) (start)
+2026-02-09T22:49:42.753200Z TRACE ThreadId(01) phase: check (tex_headers) (done)
+2026-02-09T22:49:42.753209Z TRACE ThreadId(01) phase: check (Files) (start)
+2026-02-09T22:49:42.753213Z TRACE ThreadId(01) phase: check (Files) (done)
+2026-02-09T22:49:42.753217Z TRACE ThreadId(01) phase: check (Meta) (start)
+2026-02-09T22:49:42.753220Z TRACE ThreadId(01) phase: check (Meta) (done)
+2026-02-09T22:49:42.753224Z TRACE ThreadId(01) phase: check (summary) (start)
+2026-02-09T22:49:42.753228Z TRACE ThreadId(01) phase: check (summary) (done)
+2026-02-09T22:49:42.753231Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2026-02-09T22:49:42.753269Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2026-02-09T22:49:42.753273Z TRACE ThreadId(01) phase: check (SQF) (start)
+2026-02-09T22:49:42.753307Z TRACE ThreadId(01) phase: check (SQF) (done)
+2026-02-09T22:49:42.753311Z TRACE ThreadId(01) phase: check (Stringtables) (start)
+2026-02-09T22:49:42.753332Z TRACE ThreadId(01) phase: check (Stringtables) (done)
+2026-02-09T22:49:42.753336Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
+2026-02-09T22:49:42.753339Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
+2026-02-09T22:49:42.753343Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
+2026-02-09T22:49:42.753347Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
+2026-02-09T22:49:42.753350Z TRACE ThreadId(01) phase: pre_build (git) (start)
+2026-02-09T22:49:42.753354Z TRACE ThreadId(01) phase: pre_build (git) (done)
+2026-02-09T22:49:42.753357Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2026-02-09T22:49:42.753442Z  INFO ThreadId(01) Running hook: pre_build/01_set_version.rhai
+2026-02-09T22:49:42.753934Z  INFO ThreadId(01) [pre_build/01_set_version.rhai] mod.cpp version set
+2026-02-09T22:49:42.754014Z  INFO ThreadId(01) [pre_build/01_set_version.rhai] README.md version set
+2026-02-09T22:49:42.754122Z  INFO ThreadId(01) Running hook: pre_build/02_sync_cfgpatches.rhai
+2026-02-09T22:49:42.754339Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T22:49:42.754658Z  INFO ThreadId(01) [pre_build/02_sync_cfgpatches.rhai] HOOK: Verifying CfgPatches/CfgVehicles alignment...
+2026-02-09T22:49:42.754708Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2026-02-09T22:49:42.754713Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2026-02-09T22:49:42.754718Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2026-02-09T22:49:42.754721Z TRACE ThreadId(01) phase: pre_build (tex_headers) (start)
+2026-02-09T22:49:42.756086Z  INFO ThreadId(01) Generated 0 texture headers
+2026-02-09T22:49:42.756095Z TRACE ThreadId(01) phase: pre_build (tex_headers) (done)
+2026-02-09T22:49:42.756099Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2026-02-09T22:49:42.756103Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2026-02-09T22:49:42.756107Z TRACE ThreadId(01) phase: pre_build (Meta) (start)
+2026-02-09T22:49:42.756110Z TRACE ThreadId(01) phase: pre_build (Meta) (done)
+2026-02-09T22:49:42.756114Z TRACE ThreadId(01) phase: pre_build (summary) (start)
+2026-02-09T22:49:42.756118Z TRACE ThreadId(01) phase: pre_build (summary) (done)
+2026-02-09T22:49:42.756121Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2026-02-09T22:49:42.758611Z  INFO ThreadId(01) Rapified 1 addon configs
+2026-02-09T22:49:42.758624Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2026-02-09T22:49:42.758629Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2026-02-09T22:49:42.759278Z TRACE ThreadId(03) sqf compiling /addons/main/functions/fnc_spawnVehicleAtMarker.sqf
+2026-02-09T22:49:42.759285Z TRACE ThreadId(05) sqf compiling /addons/main/functions/fnc_addAtragMXPresetLoadAction.sqf
+2026-02-09T22:49:42.759300Z TRACE ThreadId(07) sqf compiling /addons/main/functions/fnc_addScrambleAlarmActivationAction.sqf
+2026-02-09T22:49:42.759302Z TRACE ThreadId(09) sqf compiling /addons/main/functions/fnc_setVehicleDirectionFromMarker.sqf
+2026-02-09T22:49:42.759308Z TRACE ThreadId(08) sqf compiling /addons/main/functions/fnc_addAircraftSpawnActions.sqf
+2026-02-09T22:49:42.759317Z TRACE ThreadId(06) sqf compiling /addons/main/functions/fnc_spawnInjuredPatient.sqf
+2026-02-09T22:49:42.759323Z TRACE ThreadId(14) sqf compiling /addons/main/functions/fnc_vehicleCTR_single.sqf
+2026-02-09T22:49:42.759348Z TRACE ThreadId(13) sqf compiling /addons/main/functions/fnc_activateScrambleAlarm.sqf
+2026-02-09T22:49:42.759333Z TRACE ThreadId(11) sqf compiling /addons/main/functions/fnc_haloInsertionManager.sqf
+2026-02-09T22:49:42.759336Z TRACE ThreadId(10) sqf compiling /addons/main/functions/fnc_createAtragMXPresetFromWeapon.sqf
+2026-02-09T22:49:42.759360Z TRACE ThreadId(16) sqf compiling /addons/main/functions/fnc_spawnPatient.sqf
+2026-02-09T22:49:42.761216Z TRACE ThreadId(15) sqf compiling /addons/main/functions/fnc_generateAtragMXPresetFromCurrentWeapon.sqf
+2026-02-09T22:49:42.761225Z TRACE ThreadId(26) sqf compiling /addons/main/functions/spawnPatient.sqf
+2026-02-09T22:49:42.761227Z TRACE ThreadId(04) sqf compiling /addons/main/functions/fnc_exportAtragMXPresetsToClipboard.sqf
+2026-02-09T22:49:42.792288Z  INFO ThreadId(01) Compiled 14 sqf files
+2026-02-09T22:49:42.792329Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2026-02-09T22:49:42.792335Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
+2026-02-09T22:49:42.792709Z  INFO ThreadId(01) Checked 0 stringtables
+2026-02-09T22:49:42.792722Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
+2026-02-09T22:49:42.792730Z TRACE ThreadId(01) phase: build (start)
+2026-02-09T22:49:42.792747Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T22:49:42.793189Z DEBUG ThreadId(01) creating "/ext/Development/UKSFTA-Scripts/.hemttout/release/addons"
+2026-02-09T22:49:42.793223Z DEBUG ThreadId(01) building "addons/main" => "/ext/Development/UKSFTA-Scripts/.hemttout/release/addons/uksfta_main.pbo"
+2026-02-09T22:49:42.793502Z TRACE ThreadId(01) adding file "script_version.hpp"
+2026-02-09T22:49:42.793530Z TRACE ThreadId(01) adding file "script_macros.hpp"
+2026-02-09T22:49:42.793557Z TRACE ThreadId(01) adding file "config.bin"
+2026-02-09T22:49:42.793608Z TRACE ThreadId(01) adding file "functions\\spawnPatient.sqfc"
+2026-02-09T22:49:42.793617Z TRACE ThreadId(01) adding file "functions\\fnc_spawnVehicleAtMarker.sqfc"
+2026-02-09T22:49:42.793624Z TRACE ThreadId(01) adding file "functions\\fnc_vehicleCTR_single.sqfc"
+2026-02-09T22:49:42.793630Z TRACE ThreadId(01) adding file "functions\\fnc_generateAtragMXPresetFromCurrentWeapon.sqfc"
+2026-02-09T22:49:42.793636Z TRACE ThreadId(01) adding file "functions\\fnc_addAircraftSpawnActions.sqfc"
+2026-02-09T22:49:42.793644Z TRACE ThreadId(01) adding file "functions\\fnc_setVehicleDirectionFromMarker.sqfc"
+2026-02-09T22:49:42.793660Z TRACE ThreadId(01) adding file "functions\\fnc_exportAtragMXPresetsToClipboard.sqf"
+2026-02-09T22:49:42.793676Z TRACE ThreadId(01) adding file "functions\\fnc_createAtragMXPresetFromWeapon.sqfc"
+2026-02-09T22:49:42.793683Z TRACE ThreadId(01) adding file "functions\\fnc_activateScrambleAlarm.sqfc"
+2026-02-09T22:49:42.793698Z TRACE ThreadId(01) adding file "functions\\fnc_spawnInjuredPatient.sqf"
+2026-02-09T22:49:42.793722Z TRACE ThreadId(01) adding file "functions\\fnc_spawnPatient.sqf"
+2026-02-09T22:49:42.793747Z TRACE ThreadId(01) adding file "functions\\fnc_haloInsertionManager.sqf"
+2026-02-09T22:49:42.793765Z TRACE ThreadId(01) adding file "functions\\fnc_haloInsertionManager.sqfc"
+2026-02-09T22:49:42.793771Z TRACE ThreadId(01) adding file "functions\\fnc_spawnPatient.sqfc"
+2026-02-09T22:49:42.793786Z TRACE ThreadId(01) adding file "functions\\fnc_addScrambleAlarmActivationAction.sqf"
+2026-02-09T22:49:42.793812Z TRACE ThreadId(01) adding file "functions\\fnc_spawnVehicleAtMarker.sqf"
+2026-02-09T22:49:42.793828Z TRACE ThreadId(01) adding file "functions\\fnc_addAtragMXPresetLoadAction.sqfc"
+2026-02-09T22:49:42.793843Z TRACE ThreadId(01) adding file "functions\\fnc_activateScrambleAlarm.sqf"
+2026-02-09T22:49:42.793868Z TRACE ThreadId(01) adding file "functions\\fnc_vehicleCTR_single.sqf"
+2026-02-09T22:49:42.793893Z TRACE ThreadId(01) adding file "functions\\spawnPatient.sqf"
+2026-02-09T22:49:42.793917Z TRACE ThreadId(01) adding file "functions\\fnc_createAtragMXPresetFromWeapon.sqf"
+2026-02-09T22:49:42.793943Z TRACE ThreadId(01) adding file "functions\\fnc_generateAtragMXPresetFromCurrentWeapon.sqf"
+2026-02-09T22:49:42.793959Z TRACE ThreadId(01) adding file "functions\\fnc_spawnInjuredPatient.sqfc"
+2026-02-09T22:49:42.793974Z TRACE ThreadId(01) adding file "functions\\fnc_setVehicleDirectionFromMarker.sqf"
+2026-02-09T22:49:42.793991Z TRACE ThreadId(01) adding file "functions\\fnc_exportAtragMXPresetsToClipboard.sqfc"
+2026-02-09T22:49:42.794006Z TRACE ThreadId(01) adding file "functions\\fnc_addAircraftSpawnActions.sqf"
+2026-02-09T22:49:42.794029Z TRACE ThreadId(01) adding file "functions\\fnc_addScrambleAlarmActivationAction.sqfc"
+2026-02-09T22:49:42.794048Z TRACE ThreadId(01) adding file "functions\\fnc_addAtragMXPresetLoadAction.sqf"
+2026-02-09T22:49:42.794332Z  INFO ThreadId(01) Built 1 PBOs
+2026-02-09T22:49:42.794339Z TRACE ThreadId(01) phase: build (done)
+2026-02-09T22:49:42.794344Z TRACE ThreadId(01) phase: post_build (BOM Check) (start)
+2026-02-09T22:49:42.794348Z TRACE ThreadId(01) phase: post_build (BOM Check) (done)
+2026-02-09T22:49:42.794352Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (start)
+2026-02-09T22:49:42.794355Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (done)
+2026-02-09T22:49:42.794359Z TRACE ThreadId(01) phase: post_build (git) (start)
+2026-02-09T22:49:42.794363Z TRACE ThreadId(01) phase: post_build (git) (done)
+2026-02-09T22:49:42.794366Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2026-02-09T22:49:42.794417Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2026-02-09T22:49:42.794422Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
+2026-02-09T22:49:42.794425Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
+2026-02-09T22:49:42.794429Z TRACE ThreadId(01) phase: post_build (tex_headers) (start)
+2026-02-09T22:49:42.794433Z TRACE ThreadId(01) phase: post_build (tex_headers) (done)
+2026-02-09T22:49:42.794437Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2026-02-09T22:49:42.830796Z DEBUG ThreadId(01) copying "/README.md" => "/ext/Development/UKSFTA-Scripts/.hemttout/release/README.md"
+2026-02-09T22:49:42.830899Z DEBUG ThreadId(01) copying "/mod.cpp" => "/ext/Development/UKSFTA-Scripts/.hemttout/release/mod.cpp"
+2026-02-09T22:49:42.830949Z DEBUG ThreadId(01) copying "/LICENSE" => "/ext/Development/UKSFTA-Scripts/.hemttout/release/LICENSE"
+2026-02-09T22:49:42.831042Z  INFO ThreadId(01) Copied 3 files
+2026-02-09T22:49:42.831051Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2026-02-09T22:49:42.831056Z TRACE ThreadId(01) phase: post_build (Meta) (start)
+2026-02-09T22:49:42.831060Z TRACE ThreadId(01) phase: post_build (Meta) (done)
+2026-02-09T22:49:42.831064Z TRACE ThreadId(01) phase: post_build (summary) (start)
+2026-02-09T22:49:42.831305Z TRACE ThreadId(01) phase: post_build (summary) (done)
+2026-02-09T22:49:42.831311Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2026-02-09T22:49:42.831315Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2026-02-09T22:49:42.831319Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2026-02-09T22:49:42.831325Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2026-02-09T22:49:42.831328Z TRACE ThreadId(01) phase: post_build (Stringtables) (start)
+2026-02-09T22:49:42.831332Z TRACE ThreadId(01) phase: post_build (Stringtables) (done)
+2026-02-09T22:49:42.831347Z TRACE ThreadId(01) phase: pre_release (BOM Check) (start)
+2026-02-09T22:49:42.831351Z TRACE ThreadId(01) phase: pre_release (BOM Check) (done)
+2026-02-09T22:49:42.831355Z TRACE ThreadId(01) phase: pre_release (Final New Line Check) (start)
+2026-02-09T22:49:42.831359Z TRACE ThreadId(01) phase: pre_release (Final New Line Check) (done)
+2026-02-09T22:49:42.831363Z TRACE ThreadId(01) phase: pre_release (git) (start)
+2026-02-09T22:49:42.831367Z TRACE ThreadId(01) phase: pre_release (git) (done)
+2026-02-09T22:49:42.831371Z TRACE ThreadId(01) phase: pre_release (Hooks) (start)
+2026-02-09T22:49:42.831389Z TRACE ThreadId(01) no pre_release hooks
+2026-02-09T22:49:42.831393Z TRACE ThreadId(01) phase: pre_release (Hooks) (done)
+2026-02-09T22:49:42.831397Z TRACE ThreadId(01) phase: pre_release (Binarize) (start)
+2026-02-09T22:49:42.831401Z TRACE ThreadId(01) phase: pre_release (Binarize) (done)
+2026-02-09T22:49:42.831405Z TRACE ThreadId(01) phase: pre_release (tex_headers) (start)
+2026-02-09T22:49:42.831408Z TRACE ThreadId(01) phase: pre_release (tex_headers) (done)
+2026-02-09T22:49:42.831412Z TRACE ThreadId(01) phase: pre_release (Files) (start)
+2026-02-09T22:49:42.831416Z TRACE ThreadId(01) phase: pre_release (Files) (done)
+2026-02-09T22:49:42.831423Z TRACE ThreadId(01) phase: pre_release (Meta) (start)
+2026-02-09T22:49:42.831434Z TRACE ThreadId(01) phase: pre_release (Meta) (done)
+2026-02-09T22:49:42.831438Z TRACE ThreadId(01) phase: pre_release (summary) (start)
+2026-02-09T22:49:42.831442Z TRACE ThreadId(01) phase: pre_release (summary) (done)
+2026-02-09T22:49:42.831445Z TRACE ThreadId(01) phase: pre_release (Rapifier) (start)
+2026-02-09T22:49:42.831449Z TRACE ThreadId(01) phase: pre_release (Rapifier) (done)
+2026-02-09T22:49:42.831453Z TRACE ThreadId(01) phase: pre_release (SQF) (start)
+2026-02-09T22:49:42.831456Z TRACE ThreadId(01) phase: pre_release (SQF) (done)
+2026-02-09T22:49:42.831460Z TRACE ThreadId(01) phase: pre_release (Stringtables) (start)
+2026-02-09T22:49:42.831464Z TRACE ThreadId(01) phase: pre_release (Stringtables) (done)
+2026-02-09T22:49:42.831468Z TRACE ThreadId(01) phase: post_release (BOM Check) (start)
+2026-02-09T22:49:42.831472Z TRACE ThreadId(01) phase: post_release (BOM Check) (done)
+2026-02-09T22:49:42.831475Z TRACE ThreadId(01) phase: post_release (Final New Line Check) (start)
+2026-02-09T22:49:42.831479Z TRACE ThreadId(01) phase: post_release (Final New Line Check) (done)
+2026-02-09T22:49:42.831483Z TRACE ThreadId(01) phase: post_release (git) (start)
+2026-02-09T22:49:42.831486Z TRACE ThreadId(01) phase: post_release (git) (done)
+2026-02-09T22:49:42.831490Z TRACE ThreadId(01) phase: post_release (Hooks) (start)
+2026-02-09T22:49:42.831536Z TRACE ThreadId(01) phase: post_release (Hooks) (done)
+2026-02-09T22:49:42.831540Z TRACE ThreadId(01) phase: post_release (Binarize) (start)
+2026-02-09T22:49:42.831544Z TRACE ThreadId(01) phase: post_release (Binarize) (done)
+2026-02-09T22:49:42.831548Z TRACE ThreadId(01) phase: post_release (tex_headers) (start)
+2026-02-09T22:49:42.831551Z TRACE ThreadId(01) phase: post_release (tex_headers) (done)
+2026-02-09T22:49:42.831555Z TRACE ThreadId(01) phase: post_release (Files) (start)
+2026-02-09T22:49:42.831559Z TRACE ThreadId(01) phase: post_release (Files) (done)
+2026-02-09T22:49:42.831562Z TRACE ThreadId(01) phase: post_release (Meta) (start)
+2026-02-09T22:49:42.831566Z TRACE ThreadId(01) phase: post_release (Meta) (done)
+2026-02-09T22:49:42.831570Z TRACE ThreadId(01) phase: post_release (summary) (start)
+2026-02-09T22:49:42.831573Z TRACE ThreadId(01) phase: post_release (summary) (done)
+2026-02-09T22:49:42.831577Z TRACE ThreadId(01) phase: post_release (Rapifier) (start)
+2026-02-09T22:49:42.831580Z TRACE ThreadId(01) phase: post_release (Rapifier) (done)
+2026-02-09T22:49:42.831584Z TRACE ThreadId(01) phase: post_release (SQF) (start)
+2026-02-09T22:49:42.831588Z TRACE ThreadId(01) phase: post_release (SQF) (done)
+2026-02-09T22:49:42.831591Z TRACE ThreadId(01) phase: post_release (Stringtables) (start)
+2026-02-09T22:49:42.831595Z TRACE ThreadId(01) phase: post_release (Stringtables) (done)
+2026-02-09T22:49:42.837240Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2026-02-09T22:49:42.837428Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837434Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837438Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837442Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837446Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837449Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837453Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837457Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837461Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837464Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837468Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837471Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
+2026-02-09T22:49:42.837567Z TRACE ThreadId(01) wrote 18 ci annotations to .hemttout/ci_annotations.txt
