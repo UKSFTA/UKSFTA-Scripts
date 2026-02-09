@@ -1,0 +1,65 @@
+2026-02-09T17:08:46.210280Z TRACE ThreadId(01) version: 1.18.1
+2026-02-09T17:08:46.210303Z TRACE ThreadId(01) platform: linux
+2026-02-09T17:08:46.210314Z TRACE ThreadId(01) args: [
+    "hemtt",
+    "check",
+]
+2026-02-09T17:08:46.210521Z TRACE ThreadId(01) using temporary folder: "/tmp/hemtt/matt/Development_UKSFTA-Scripts"
+2026-02-09T17:08:46.210534Z TRACE ThreadId(01) using project folder: "/ext/Development/UKSFTA-Scripts"
+2026-02-09T17:08:46.210544Z TRACE ThreadId(01) using out folder: "/ext/Development/UKSFTA-Scripts/.hemttout"
+2026-02-09T17:08:46.210606Z TRACE ThreadId(01) using build folder: "/ext/Development/UKSFTA-Scripts/.hemttout/check"
+2026-02-09T17:08:46.211093Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T17:08:46.211214Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T17:08:46.211519Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T17:08:46.218734Z  INFO ThreadId(01) Config loaded for UKSF Task Force Alpha - Scripts 1.0.0.0-bc4cf9fa
+2026-02-09T17:08:46.218760Z TRACE ThreadId(01) Scanning /ext/Development/UKSFTA-Scripts/addons for addons
+2026-02-09T17:08:46.218819Z DEBUG ThreadId(01) using global config directory: "/home/matt/.config/hemtt"
+2026-02-09T17:08:46.218841Z  INFO ThreadId(01) Running checks
+2026-02-09T17:08:46.218852Z TRACE ThreadId(01) phase: init (BOM Check) (start)
+2026-02-09T17:08:46.218857Z TRACE ThreadId(01) phase: init (BOM Check) (done)
+2026-02-09T17:08:46.218861Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
+2026-02-09T17:08:46.218865Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
+2026-02-09T17:08:46.218868Z TRACE ThreadId(01) phase: init (git) (start)
+2026-02-09T17:08:46.218872Z TRACE ThreadId(01) phase: init (git) (done)
+2026-02-09T17:08:46.218876Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2026-02-09T17:08:46.220193Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2026-02-09T17:08:46.220229Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2026-02-09T17:08:46.220234Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2026-02-09T17:08:46.220238Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2026-02-09T17:08:46.220242Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2026-02-09T17:08:46.220252Z TRACE ThreadId(01) phase: init (SQF) (start)
+2026-02-09T17:08:46.335561Z TRACE ThreadId(01) phase: init (SQF) (done)
+2026-02-09T17:08:46.335582Z TRACE ThreadId(01) phase: init (Stringtables) (start)
+2026-02-09T17:08:46.335587Z TRACE ThreadId(01) phase: init (Stringtables) (done)
+2026-02-09T17:08:46.335592Z TRACE ThreadId(01) phase: check (BOM Check) (start)
+2026-02-09T17:08:46.335736Z TRACE ThreadId(01) phase: check (BOM Check) (done)
+2026-02-09T17:08:46.335742Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
+2026-02-09T17:08:46.335864Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
+2026-02-09T17:08:46.335869Z TRACE ThreadId(01) phase: check (git) (start)
+2026-02-09T17:08:46.337802Z TRACE ThreadId(01) phase: check (git) (done)
+2026-02-09T17:08:46.337810Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2026-02-09T17:08:46.337814Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2026-02-09T17:08:46.337818Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2026-02-09T17:08:46.338277Z  INFO ThreadId(01) Validated 0 files for binarization
+2026-02-09T17:08:46.338284Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2026-02-09T17:08:46.338288Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2026-02-09T17:08:46.338322Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2026-02-09T17:08:46.338326Z TRACE ThreadId(01) phase: check (SQF) (start)
+2026-02-09T17:08:46.338359Z TRACE ThreadId(01) phase: check (SQF) (done)
+2026-02-09T17:08:46.338363Z TRACE ThreadId(01) phase: check (Stringtables) (start)
+2026-02-09T17:08:46.338384Z TRACE ThreadId(01) phase: check (Stringtables) (done)
+2026-02-09T17:08:46.338388Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
+2026-02-09T17:08:46.338391Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
+2026-02-09T17:08:46.338395Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
+2026-02-09T17:08:46.338399Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
+2026-02-09T17:08:46.338403Z TRACE ThreadId(01) phase: pre_build (git) (start)
+2026-02-09T17:08:46.338406Z TRACE ThreadId(01) phase: pre_build (git) (done)
+2026-02-09T17:08:46.338410Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2026-02-09T17:08:46.338504Z  INFO ThreadId(01) Running hook: pre_build/01_set_version.rhai
+2026-02-09T17:08:46.338967Z  INFO ThreadId(01) [pre_build/01_set_version.rhai] mod.cpp version set
+2026-02-09T17:08:46.339090Z  INFO ThreadId(01) Running hook: pre_build/02_sync_cfgpatches.rhai
+2026-02-09T17:08:46.339300Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/matt/Development_UKSFTA-Scripts/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/ext/Development/UKSFTA-Scripts" } } } } } }] } } }
+2026-02-09T17:08:46.339613Z  INFO ThreadId(01) [pre_build/02_sync_cfgpatches.rhai] HOOK: Verifying CfgPatches/CfgVehicles alignment...
+2026-02-09T17:08:46.339668Z TRACE ThreadId(01) phase: pre_build (Hooks) (failed)
+2026-02-09T17:08:46.342909Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2026-02-09T17:08:46.342981Z TRACE ThreadId(01) wrote 1 ci annotations to .hemttout/ci_annotations.txt

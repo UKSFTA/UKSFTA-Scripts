@@ -1,0 +1,1 @@
+8||8||56||56||error||Script /.hemtt/hooks/pre_build/01_set_version.rhai failed at runtime||runtime error: Could not open file for '/docs/README.md': The file or directory could not be found (line 8, position 56)||/.hemtt/hooks/pre_build/01_set_version.rhai
