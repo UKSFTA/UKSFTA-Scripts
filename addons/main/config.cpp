@@ -9,7 +9,7 @@ class CfgPatches {
         requiredVersion = 1.60;
         requiredAddons[] = {"cba_main"};
         author = "UKSF Taskforce Alpha Team";
-        VERSION_CONFIG;
+        VERSION_CONFIG
     };
 };
 
