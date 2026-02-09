@@ -6,10 +6,10 @@ class CfgPatches {
         name = "UKSF Task Force Alpha - Scripts Core";
         units[] = {};
         weapons[] = {};
-        requiredVersion = 1.60;
+        requiredVersion = 2.02;
         requiredAddons[] = {"cba_main"};
-        author = "UKSF Taskforce Alpha Team";
-        VERSION_CONFIG
+        author = QUOTE(AUTHOR);
+        VERSION_CONFIG;
     };
 };
 
@@ -18,7 +18,7 @@ class CfgFunctions {
         class main {
             tag = "UKSFTA";
             class functions {
-                file = "\z\UKSFTA-Scripts\addons\main\functions";
+                file = "\z\uksfta\main\functions";
                 // Functions will be registered as UKSFTA_fnc_filename
                 class activateScrambleAlarm;
                 class addAircraftSpawnActions;
