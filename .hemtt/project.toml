@@ -1,7 +1,7 @@
 name = "UKSF Task Force Alpha - Scripts"
 author = "UKSF Taskforce Alpha Team"
-prefix = ""
-mainprefix = "z\\uksfta"
+prefix = "uksfta"
+mainprefix = "z"
 
 [version]
 path = "addons/main/script_version.hpp"
