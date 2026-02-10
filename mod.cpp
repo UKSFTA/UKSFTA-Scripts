@@ -1,3 +1,9 @@
 name = "UKSF Task Force Alpha - Scripts";
 author = "UKSF Taskforce Alpha Team";
+logo = "\z\uksfta\addons\main\data\logo_128_ca.paa";
+logoOver = "\z\uksfta\addons\main\data\logo_128_ca.paa";
+logoSmall = "\z\uksfta\addons\main\data\logo_64_ca.paa";
 overview = "Centralized logic core for UKSFTA mod suite.";
+picture = "\z\uksfta\addons\main\data\title_co.paa";
+tooltip = "UKSFTA";
+tooltipOwned = "UKSF Taskforce Alpha";
