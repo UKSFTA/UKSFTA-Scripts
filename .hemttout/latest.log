@@ -1,8 +1,0 @@
-2026-02-10T20:29:31.015827Z TRACE ThreadId(01) version: 1.18.2
-2026-02-10T20:29:31.015847Z TRACE ThreadId(01) platform: linux
-2026-02-10T20:29:31.015859Z TRACE ThreadId(01) args: [
-    "hemtt",
-    "build",
-]
-2026-02-10T20:29:31.084525Z ERROR ThreadId(01) Failed to execute command:
-Project error: Prefix error: Prefix can not be empty
