@@ -18,7 +18,7 @@ class CfgFunctions {
         class main {
             tag = "UKSFTA";
             class functions {
-                file = "\z\uksfta\main\functions";
+                file = "\z\uksfta\addons\main\functions";
                 // Functions will be registered as UKSFTA_fnc_filename
                 class activateScrambleAlarm;
                 class addAircraftSpawnActions;
