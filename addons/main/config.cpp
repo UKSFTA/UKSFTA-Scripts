@@ -9,7 +9,7 @@ class CfgPatches {
         requiredVersion = 2.02;
         requiredAddons[] = {"cba_main"};
         author = QUOTE(AUTHOR);
-        VERSION_CONFIG;
+        version = 1.00; versionStr = "1.0.0"; versionAr[] = {1,0,0};
     };
 };
 
