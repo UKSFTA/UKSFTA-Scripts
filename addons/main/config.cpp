@@ -9,6 +9,7 @@ class CfgPatches {
         requiredVersion = 2.02;
         requiredAddons[] = {"cba_main"};
         author = QUOTE(AUTHOR);
+        VERSION_CONFIG;
     };
 };
 
@@ -18,7 +19,6 @@ class CfgFunctions {
             tag = "UKSFTA";
             class functions {
                 file = "z\uksfta\addons\main\functions";
-                // Functions will be registered as UKSFTA_fnc_filename
                 class activateScrambleAlarm;
                 class addAircraftSpawnActions;
                 class addAtragMXPresetLoadAction;
