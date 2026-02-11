@@ -9,7 +9,7 @@ class CfgPatches
         author = "UKSFTA";
         authors[] = {"UKSFTA"};
         name = "UKSFTA Vehicle CTR";
-        url = "https://www.uksfta.co.uk/";
+        url = "https://uksfta.github.io";
         version = "1.0";
     };
 };
