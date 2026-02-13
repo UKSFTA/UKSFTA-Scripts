@@ -55,8 +55,8 @@ private _weaponDisplayName = getText(configFile >> "CfgWeapons" >> _weapon >> "d
 private _presetName = format ["%1 (%2)", _weaponDisplayName, _ammoClassName];
 
 private _newPreset = [
-    _presetName, _muzzleVel_avg, _userZeroRange, 0, _airFriction, _boreHeight, 
-    0, 0, 0, 0, 0, 0, _bulletMass, 0, _rifleTwist, _bc_avg, _dragModel, 
+    _presetName, _muzzleVel_avg, _userZeroRange, 0, _airFriction, _boreHeight,
+    0, 0, 0, 0, 0, 0, _bulletMass, 0, _rifleTwist, _bc_avg, _dragModel,
     "ICAO", _mvTempInterp_formatted, [], true
 ];
 

@@ -15,8 +15,8 @@ if (isNull _host) exitWith {};
 _host addAction ["--------STEP ONE--------", { hint 'Select the Drop Zone'; }];
 
 _host addAction ["<t color='#00ffa6'>Select Drop Zone</t>", {
-    openMap true; 
-    hint 'Click on desired location.'; 
+    openMap true;
+    hint 'Click on desired location.';
     onMapSingleClick {
         params ["_pos"]; // Declare private parameter
         onMapSingleClick {};
@@ -25,12 +25,12 @@ _host addAction ["<t color='#00ffa6'>Select Drop Zone</t>", {
         hint 'Flight Plan Set';
         openMap false;
         true;
-    }; 
+    };
 }];
 
 _host addAction ["<t color='#09FF00'>Give PLAYER Parachute (stores current backpack)</t>", {
     [player, [missionNamespace, "inventory_var"]] call BIS_fnc_SaveInventory;
-    removeBackpack player; 
+    removeBackpack player;
     player addBackpack "B_Parachute";
 }];
 
@@ -44,14 +44,14 @@ _host addAction ["--------STEP TWO--------", { hint 'Select the Altitude'; }];
         private _dz = createVehicle ["O_diver_TL_F", getMarkerPos "dz", [], 0, "NONE"];
         _dz hideObjectGlobal true;
         _dz disableAI "ALL";
-        
+
         private _plane = createVehicle ["RHS_C130J", getMarkerPos "dz", [], 0, "NONE"];
         _plane attachTo [_dz, [0, 0, _altVal]];
         _plane engineOn true;
-        _plane setVehicleVarName "plane02"; 
+        _plane setVehicleVarName "plane02";
         plane02 = _plane;
         publicVariable "plane02";
-        
+
         hint format ["Altitude %1m Selected", _altVal];
     }, [_alt]];
 } forEach [["350", 350], ["2000", 2000], ["4000", 4000], ["6000", 6000], ["10000", 10000]];

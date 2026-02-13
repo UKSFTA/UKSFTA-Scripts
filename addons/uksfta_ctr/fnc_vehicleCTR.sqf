@@ -36,20 +36,20 @@ _this spawn {
             case "IDLE": {
                 private _players = allPlayers select { alive _x && (_x distance2D _veh) < _detectRadius };
                 {
-                    if ((_currentGrp knowsAbout _x) >= 1.5) exitWith { 
-                        _contact = _x; _state = "OBSERVING"; 
+                    if ((_currentGrp knowsAbout _x) >= 1.5) exitWith {
+                        _contact = _x; _state = "OBSERVING";
                     };
                 } forEach _players;
             };
 
             case "OBSERVING": {
                 if (isNull _contact || !alive _contact) then {
-                    _state = "IDLE"; 
+                    _state = "IDLE";
                     _contactTimer = 0;
                 } else {
                     _contactTimer = _contactTimer + 1;
-                    if (_contactTimer >= _confirmTime) then { 
-                        _state = "ALERTED"; 
+                    if (_contactTimer >= _confirmTime) then {
+                        _state = "ALERTED";
                     };
                 };
             };
@@ -72,7 +72,7 @@ _this spawn {
                         _hiddenPos = _coverPositions select 0;
                     };
                 };
-                
+
                 _wp = _currentGrp addWaypoint [_hiddenPos, 0];
                 _wp setWaypointType "MOVE";
                 _currentGrp setCurrentWaypoint _wp;
@@ -85,7 +85,7 @@ _this spawn {
                 _veh forceSpeed 0;
                 _veh engineOn false;
                 _veh lock 2;
-                
+
                 if (!isNull _wp) then {
                     deleteWaypoint [_currentGrp, _wp];
                     _wp = objNull;

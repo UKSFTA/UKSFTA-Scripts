@@ -19,14 +19,14 @@ if (isServer) then {
     {
         private _marker_name = _x;
         private _spawn_pos = getMarkerPos _marker_name;
-        
+
         if (_spawn_pos isNotEqualTo [0,0,0]) then {
             if ((nearestObjects [_spawn_pos, ["AllVehicles"], 5]) isEqualTo []) then {
                 private _vehicle = createVehicle [_vehicle_class, _spawn_pos, [], 0, "NONE"];
                 private _marker_dir = markerDir _marker_name;
                 _vehicle setDir _marker_dir;
                 _spawned = true;
-                
+
                 ["Vehicle spawned successfully!"] remoteExec ["hint", 0, false];
                 break;
             };
