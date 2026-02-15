@@ -1,9 +1,9 @@
 name = "UKSF Task Force Alpha - Scripts";
 author = "UKSF Taskforce Alpha Team";
-logo = "\z\z\z\uksfta\addons\scripts\addons\scripts\addons\main\data\logo_128_ca.paa";
-logoOver = "\z\z\z\uksfta\addons\scripts\addons\scripts\addons\main\data\logo_128_ca.paa";
-logoSmall = "\z\z\z\uksfta\addons\scripts\addons\scripts\addons\main\data\logo_64_ca.paa";
+logo = "z\uksfta\addons\main\data\logo_128_ca.paa";
+logoOver = "z\uksfta\addons\main\data\logo_128_ca.paa";
+logoSmall = "z\uksfta\addons\main\data\logo_64_ca.paa";
 overview = "Centralized logic core for UKSFTA mod suite.";
-picture = "\z\z\z\uksfta\addons\scripts\addons\scripts\addons\main\data\title_co.paa";
+picture = "z\uksfta\addons\main\data\title_co.paa";
 tooltip = "UKSFTA";
 tooltipOwned = "UKSF Taskforce Alpha";
