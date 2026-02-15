@@ -18,7 +18,7 @@ class CfgFunctions {
         class main {
             tag = "UKSFTA";
             class functions {
-                file = "z\uksfta\addons\main\functions";
+                file = "z\z\z\uksfta\addons\scripts\addons\scripts\addons\main\functions";
                 class activateScrambleAlarm;
                 class addAircraftSpawnActions;
                 class addAtragMXPresetLoadAction;
