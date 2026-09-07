@@ -3,6 +3,7 @@
 
 # HEMTT Artifacts
 .hemttout/
+.hemtt_temp/
 .hemtt/
 .hemttprivatekey
 !.hemtt/project.toml
@@ -37,3 +38,9 @@ __pycache__/
 # System
 .DS_Store
 Thumbs.db
+
+# DevOps Artifacts
+UNIT_HEALTH_REPORT.md
+health_history.json
+unit_assets.json
+ASSET_CATALOG.md
