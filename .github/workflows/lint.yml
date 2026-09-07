@@ -22,3 +22,4 @@ jobs:
             **/*.md
             !**/node_modules/**
             !**/.hemttout/**
+            !**/CODE_OF_CONDUCT.md
